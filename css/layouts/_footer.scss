@@ -1,0 +1,117 @@
+.footer {
+  background: url(../images/noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  @include media-tablet {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    flex-wrap: wrap;
+    margin-left: 4px;
+  }
+}
+
+.contacts__block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 280px;
+  row-gap: 40px;
+}
+
+.location__block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 305px;
+  row-gap: 33px;
+  @include media-mobile {
+    row-gap: 40px;
+  }
+}
+
+.contacts__title, .location__title {
+  color: #FFFFFF;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  padding-top: 16px;
+  @include media-mobile {
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
+}
+
+.mail__subtitle, .phone__subtitle, .boston__subtitle, .london__subtitle {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  .mail__box, .phone__box, .boston__box, .london__box {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $color-primary;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.05);
+      text-shadow: 0.5px 0.5px 1.5px $color-primary;
+    }
+    .contacts__link {
+      text-decoration: none;
+      color: $color-primary;
+      @include media-mobile {
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+      }
+    }
+  }
+}
+
+.location__title-wait {
+  @include media-mobile {
+    padding-top: 38px;
+    width: 270px;
+    padding-left: 26px;
+  }
+}
+
+.footer__img {
+  @include media-tablet {
+    max-width: 42.4%;
+    margin-top: 65px;
+  }
+  @include media-mobile {
+    max-width: 94.4%;
+    margin-top: 39px;
+  }
+}
+
+.town__subtitle-box {
+  @include media-mobile {
+    width: 300px;
+  }
+}
+
+.mail__icon {
+  @include media-mobile {
+    padding-left: 10px;
+  }
+}
+
+.phone__icon {
+  @include media-mobile {
+    padding-left: 16px;
+  }
+}

@@ -1,0 +1,131 @@
+.friends {
+  background: $color-light-l;
+  .wrapper {
+
+  }
+}
+
+.friends__content {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include media-mobile {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+}
+
+.friends__text {
+  width: 400px;
+  margin-left: 2px;
+  color: $color-dark-l;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  @include media-mobile {
+    font-size: 25px;
+    width: 320px;
+  }
+}
+
+.friends__animals {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include media-mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "cards cards";
+    row-gap: 20px;
+    column-gap: 80px;
+    margin-top: 42px;
+    margin-bottom: 42px;
+  }
+}
+
+.card {
+  padding-bottom: 30px;
+  border-radius: 9px;
+  background-color: $color-light-s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background: #FFFFFF;
+    .learn__btn {
+      background: $color-primary;
+    }
+  }
+  @include media-tablet {
+    &:nth-child(1n+3) {
+      display: none;
+    }
+  }
+  @include media-mobile {
+    padding-bottom: 50px;
+    &:nth-child(2n+2) {
+      display: none;
+    }
+  }
+}
+
+.card__gap {
+  display: flex;
+  column-gap: 90px;
+  @include media-tablet {
+    column-gap: 40px;
+  }
+}
+
+.around__btn {
+  background-image: url(../images/Arrow.svg);
+  &:hover {
+    background-color: $color-primary;
+  }
+  @include media-mobile {
+    order: 1;
+  }
+}
+
+.left__btn {
+  @include media-mobile {
+    justify-self: end;
+  }
+}
+
+.rigth__btn {
+  background-image: url(../images/Arrow.svg);
+  transform: rotate(180deg);
+}
+
+.animal__name {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: $color-dark-l;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding-top: 28px;
+  padding-left: 2px;
+}
+
+.button_primary {
+  color: $color-dark-3xl;
+  &:hover {
+    background-color: $color-primary-light;
+    border-color: $color-primary-light;
+  }
+}

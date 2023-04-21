@@ -1,0 +1,147 @@
+.donation {
+  background: $color-light-l;
+  .wrapper {
+    @include media-mobile {
+      padding: 0 10px;
+    }
+  }
+}
+
+.donation__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 78px;
+  padding-bottom: 100px;
+  @include media-tablet {
+    flex-direction: column-reverse;
+  }
+  @include media-mobile {
+    padding-top: 40px;
+    padding-bottom: 42px;
+  }
+}
+
+.donation__box {
+  margin-left: 30px;
+  @include media-tablet {
+    margin-left: 0;
+  }
+}
+
+.box__text {
+  margin-top: 2px;
+  width: 300px;
+  color: $color-dark-l;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  @include media-mobile {
+    font-size: 25px;
+    text-align: center;
+    padding: 0 36px;
+  }
+}
+
+.box__subtext {
+  color: $color-dark-l;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  margin: 20px 0;
+  @include media-mobile {
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: 0em;
+    padding-left: 13px;
+  }
+}
+
+.credit__card {
+  background-color: $color-primary;
+  width: 349px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 13px;
+  border-radius: 9px;
+  border: 2px solid $color-primary;
+  cursor:pointer;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background-color: $color-primary-light;
+    border: 2px solid $color-primary-light;
+  }
+  @include media-mobile {
+    margin-left: 10px;
+    width: 280px;
+  }
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  width: 319px;
+}
+
+.card__number {
+  color: $color-dark-l;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  @include media-mobile {
+  font-size: 15px;
+  line-height: 110%;
+  }
+}
+
+.card__link {
+  display: flex;
+  justify-content: space-between;
+  width: 319px;
+  text-decoration: none;
+  @include media-mobile {
+    width: 250px;
+  }
+}
+
+.information {
+  margin-top: 20px;
+  width: 380px;
+  font-family: 'Arial';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: $color-dark-m;
+  @include media-tablet {
+    padding-bottom: 57px;
+  }
+  @include media-mobile {
+    padding-left: 10px;
+    padding-bottom: 41px;
+    width: 290px;
+    font-size: 12px;
+    line-height: 18px;
+    align-items: center;
+    text-align: justify;
+  }
+}
+
+.donation__img {
+  @include media-tablet {
+    max-width: 71.4%;
+  }
+  @include media-mobile {
+    max-width: 87%;
+  }
+}

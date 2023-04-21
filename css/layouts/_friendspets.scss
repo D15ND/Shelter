@@ -1,0 +1,207 @@
+.friends {
+  background: $color-light-l;
+}
+
+.friends__content {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include media-mobile {
+    padding-top: 42px;
+  }
+}
+
+.friends__text {
+  width: 400px;
+  margin-left: 2px;
+  color: $color-dark-l;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  @include media-mobile {
+    font-size: 25px;
+    width: 320px;
+  }
+}
+
+.friends__animals {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include media-tablet {
+    margin-top: 30px;
+    margin-bottom: 38px;
+  }
+}
+
+.card {
+  padding-bottom: 32px;
+  border-radius: 9px;
+  background-color: $color-light-s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background: #FFFFFF;
+    .learn__btn {
+      background: $color-primary;
+    }
+  }
+  @include media-tablet {
+    &:nth-child(1n+7) {
+      display: none;
+    }
+  }
+  @include media-mobile {
+    &:nth-child(1n+4) {
+      display: none;
+    }
+  }
+}
+
+.card__gap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 40px;
+  row-gap: 30px;
+  @include media-mobile {
+    padding-top: 12px;
+  }
+}
+
+.around__btn {
+  &:hover {
+    background-color: $color-primary;
+  }
+}
+
+.buttons__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  @include media-tablet {
+    padding-bottom: 77px;
+  }
+  @include media-mobile {
+    padding-bottom: 42px;
+  }
+}
+
+.buttons__navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+  @include media-mobile {
+    column-gap: 10px;
+    padding-top: 2px;
+  }
+  .dobule__left {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $color-dark-s;
+    background-color: transparent;
+    box-sizing: border-box;
+    border: 2px solid $color-dark-s;
+    cursor: default;
+  }
+  .one__left {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $color-dark-s;
+    background-color: transparent;
+    box-sizing: border-box;
+    border: 2px solid $color-dark-s;
+    cursor: default;
+  }
+  .midle__btn {
+    background-image: none;
+    color: $color-dark-3xl;
+    background-color: $color-primary;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: default;
+  }
+  .one__rigth {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+    transition: 0.3 ease-in-out;
+    transform: rotate(180deg);
+    &:hover {
+      background-color: $color-primary-light;
+      border: 2px solid $color-primary-light;
+    }
+  }
+  .dobule__rigth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+    transition: 0.3 ease-in-out;
+    transform: rotate(180deg);
+    &:hover {
+      background-color: $color-primary-light;
+      border: 2px solid $color-primary-light;
+    }
+  }
+}
+
+// .rigth__btn {
+//   transform: rotate(180deg);
+// }
+
+.animal__name {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: $color-dark-l;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding-top: 28px;
+  padding-left: 2px;
+}
+
+.button_primary {
+  color: $color-dark-3xl;
+  &:hover {
+    background-color: $color-primary-light;
+    border-color: $color-primary-light;
+  }
+}

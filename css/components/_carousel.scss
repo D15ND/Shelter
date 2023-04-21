@@ -1,0 +1,84 @@
+.card__carousel {
+	display: flex;
+	position: relative;
+	left: -1080px;
+	column-gap: 90px;
+  @include media-tablet {
+    column-gap: 40px;
+    left: -620px;
+  }
+  @include media-mobile {
+    left: -310px;
+  }
+}
+
+.card__wrapper {
+  width: 990px;
+  overflow: hidden;
+  margin-left: 53px;
+  margin-right: 53px;
+  @include media-tablet {
+    margin: 0 11px;
+    width: 580px;
+  }
+  @include media-mobile {
+    width: 270px;
+    grid-area: cards;
+  }
+}
+
+@keyframes move-right {
+  from {left: -1080px;}
+  to {left: -2160px;}
+}
+
+@keyframes move-right-tablet {
+  from {left: -620px;}
+  to {left: -1240px;}
+}
+
+@keyframes move-left-tablet {
+  from {left: -620px;}
+  to {left: 0;}
+}
+
+@keyframes move-right-mobile {
+  from {left: -310px;}
+  to {left: -620px;}
+}
+
+@keyframes move-left-mobile {
+  from {left: -310px;}
+  to {left: 0;}
+}
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 3s;
+  @include media-tablet {
+    animation-name: move-right-tablet;
+  }
+  @include media-mobile {
+    animation-name: move-right-mobile;
+  }
+}
+
+@keyframes move-left {
+  from {left: -1080px;}
+  to {left: 0px;}
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 3s;
+  @include media-tablet {
+    animation-name: move-left-tablet;
+  }
+  @include media-mobile {
+    animation-name: move-left-mobile;
+  }
+}
+
+.hidden__none {
+  display: none;
+}
